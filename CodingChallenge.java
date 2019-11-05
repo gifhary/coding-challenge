@@ -49,7 +49,7 @@ public class CodingChallenge {
      * The method used here is manually increasing index number iteratively, compute "index" to the "nth root"
      * power and then assign the value as reference. As long the reference value still less than the base
      * number, the loop keep increasing the index value until "reference" is equal to "base"
-     * The method will retun final index value as the nth root of base number
+     * The method will retun final index value as the result of nth root of base number
     */
     public static double nthRoot(double base, int root) {
         double i = 1; //index
