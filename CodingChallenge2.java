@@ -51,6 +51,8 @@ public class CodingChallenge2 {
 
         double x0 = 1;
         boolean accurate = false;
+
+        //If !accurate value is true this loop will keep processing until !accurate equal to false
         while (!accurate) {
             double x1 = (1 / (double)rootNum) * ((rootNum - 1) * x0 + base / power(x0, rootNum - 1));
             accurate = accurate(x0, x1);
@@ -59,15 +61,17 @@ public class CodingChallenge2 {
         return x0;
     }
  
- 
+    //If x1 - x0 is less than 0.000001, this method will return true
     private static boolean accurate(double x0, double x1) {
         return absolute(x1-x0) < 0.000001;
     }
 
+    //Since the requirement is not using any Math library, here is written the source code in StrictMath.abs
     private static double absolute(double a){
         return (a <= 0) ? 0 - a : a;
     }
 
+    //Recursive function to calculate exponent
     static double power(double x, int n) {
         if(n == 0) {
             return 1;
