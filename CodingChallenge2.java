@@ -65,7 +65,7 @@ public class CodingChallenge2 {
     }
 
     private static double absolute(double a){
-        return (a <= 0.0F) ? 0.0F - a : a;
+        return (a <= 0) ? 0 - a : a;
     }
 
     static double power(double x, int n) {

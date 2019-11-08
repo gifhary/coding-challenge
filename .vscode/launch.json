@@ -2,6 +2,13 @@
     "configurations": [
         {
             "type": "java",
+            "name": "CodeLens (Launch) - CodingChallenge2",
+            "request": "launch",
+            "mainClass": "CodingChallenge2",
+            "projectName": "Coding_challenge_38254cab"
+        },
+        {
+            "type": "java",
             "name": "CodeLens (Launch) - Haha",
             "request": "launch",
             "mainClass": "Haha",
